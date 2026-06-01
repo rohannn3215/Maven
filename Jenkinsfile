@@ -1,5 +1,8 @@
 pipeline {
 agent any
+  triggers {
+    cron('*****')
+  }
 tools {
 maven 'Maven' // Must match Jenkins Global Tool Configuration
 jdk 'JDK' // Configure this as JDK 21 in Jenkins
